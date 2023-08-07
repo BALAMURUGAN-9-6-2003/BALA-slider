@@ -1,0 +1,49 @@
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+    overflow: hidden;
+    background: #134E5E;
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);
+    background: linear-gradient(to right, #71B280, #134E5E);
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.continer {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continer .item {
+    height: 70%;
+    width: 40%;
+ 
+    margin: 10px;
+    transition: .9s;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.continer .item .hide .img1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 25px;
+    width: 100%;
+    background-size: cover;
+    visibility: visible;
+    transition: .3s;
+}
+
+.continer .item:hover {
+    width: 150%;
+}
+
